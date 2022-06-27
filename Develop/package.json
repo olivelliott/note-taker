@@ -1,0 +1,17 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
+  },
+  "description": ""
+}
