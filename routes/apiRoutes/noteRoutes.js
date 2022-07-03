@@ -3,8 +3,7 @@ const router = require("express").Router();
 const path = require("path");
 const fs = require("fs");
 const uuid = require("../../helpers/uuid");
-const { notes } = require('../../db/db.json');
-const { createNewNote } = require('../../lib/notes');
+const notes = require('../../db/db.json');
 
 router.get("/notes", (req, res) => {
     res.sendFile(path.join(__dirname, '../../db/db.json'))
@@ -45,7 +44,7 @@ router.post('/notes', (req, res) => {
                 );
             }
         });
-
+        
         const response = {
             status: 'success',
             body: newNote,
@@ -60,9 +59,34 @@ router.post('/notes', (req, res) => {
 router.delete('/notes/:id', (req, res) => {
     const params = [req.params.id];
     if (params) {
-        let filteredNotes = notes.filter((note) => note.id !== req.params.id);
-        fs.writeFileSync('./db/db.json', JSON.stringify(filteredNotes));
-        res.json(filteredNotes);
+        fs.readFile(path.join(__dirname, "../../db/db.json"), 'utf-8', (err, data) => {
+            if (err) {
+                console.log(err);
+            } else {
+                // Filter through the notes array and remove the chosen id from the object
+                let filteredNotes = notes.filter((note) => note.id !== req.params.id);
+
+                // Write filtered notes back to the database
+                fs.writeFile(
+                    path.join(__dirname, "../../db/db.json"),
+                    JSON.stringify(filteredNotes, null, 2),
+
+                    (err) =>
+                    err
+                        ? console.log(err)
+                        : console.log(`Note has been deleted from the JSON database`)
+                );
+
+                const response = {
+                    status: "success",
+                    body: filteredNotes,
+                };
+
+                res.json(response);
+            }
+        });
+    } else {
+        res.json("Error in deleting note");
     }
 })
 
