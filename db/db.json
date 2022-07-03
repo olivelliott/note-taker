@@ -1,53 +1,62 @@
-{
-  "notes": [
-    {
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    {
-      "title": "anotheraearawer",
-      "text": "hello theaewrewre",
-      "id": "523e"
-    },
-    {
-      "title": "anotheraearawer",
-      "text": "hello theaewrewre",
-      "id": "8729"
-    },
-    {
-      "title": "anotawer",
-      "text": "helre",
-      "id": "6bb9"
-    },
-    {
-      "title": "hi heloo",
-      "text": "hello there",
-      "id": "835d"
-    },
-    {
-      "title": "et",
-      "text": "awerawer",
-      "id": "4121"
-    },
-    {
-      "title": "et",
-      "text": "awerawer",
-      "id": "f95e"
-    },
-    {
-      "title": "new note",
-      "text": "I am a new note",
-      "id": "7c99"
-    },
-    {
-      "title": "new new",
-      "text": "hello",
-      "id": "3340"
-    },
-    {
-      "title": "sfg",
-      "text": "ser",
-      "id": "b9b6"
-    }
-  ]
-}
+[
+  {
+    "title": "anotheraearawer",
+    "text": "hello theaewrewre",
+    "id": "523e"
+  },
+  {
+    "title": "anotheraearawer",
+    "text": "hello theaewrewre",
+    "id": "8729"
+  },
+  {
+    "title": "anotawer",
+    "text": "helre",
+    "id": "6bb9"
+  },
+  {
+    "title": "hi heloo",
+    "text": "hello there",
+    "id": "835d"
+  },
+  {
+    "title": "et",
+    "text": "awerawer",
+    "id": "4121"
+  },
+  {
+    "title": "et",
+    "text": "awerawer",
+    "id": "f95e"
+  },
+  {
+    "title": "new note",
+    "text": "I am a new note",
+    "id": "7c99"
+  },
+  {
+    "title": "new new",
+    "text": "hello",
+    "id": "3340"
+  },
+  {
+    "title": "sfg",
+    "text": "ser",
+    "id": "b9b6"
+  },
+  {
+    "title": "test",
+    "text": "test",
+    "id": "a009"
+  },
+  {
+    "title": "sg",
+    "text": "dsg",
+    "id": "789e"
+  },
+  {
+    "title": "reery",
+    "text": "eryery",
+    "id": "d645"
+  }
+]
