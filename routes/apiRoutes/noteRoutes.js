@@ -44,7 +44,7 @@ router.post('/notes', (req, res) => {
                 );
             }
         });
-        
+
         const response = {
             status: 'success',
             body: newNote,
@@ -88,7 +88,6 @@ router.delete('/notes/:id', (req, res) => {
     } else {
         res.json("Error in deleting note");
     }
-})
-
+});
 
 module.exports = router;

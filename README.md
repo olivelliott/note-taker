@@ -1,14 +1,18 @@
-# Note Taker Starter Code
+# Express.js : Note Taker
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-# 11 Express.js: Note Taker
+## Description
+A web application that can be used to write and save notes. The application uses Express.js on the back end to save and retrieve note data from a JSON file.
 
-## Your Task
-
-Your challenge is to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
-
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
-
-Before you start, clone [the starter code](https://github.com/coding-boot-camp/miniature-eureka).
+## Table of Contents
+- [User Story](#user-story)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [License](#license)
+- [Contributing](#contributing)
+- [Questions](#questions)
+- [Credits](#credits)
 
 ## User Story
 
@@ -17,63 +21,43 @@ AS A small business owner
 I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
+## Installation
 
-## Acceptance Criteria
+Please fork this repository over to your local system. 
 
-```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-```
+Once you have forked this repository, please initialize the npm modules into the repository through the command `npm install`. The package.json file holds the necessary dependencies for Node.js and Express.js.
 
-## Mock-Up
+The server.js file contains the PORT, middleware, and imports for the required routes. The HTML and API routes are located in the `routes` directory. The helper folder contains the function to create unique id's for each saved note.
 
-The following images show the web application's appearance and functionality: 
+## Usage
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+- The server.js file contains the methods to initialize database
+- Initialize your command-line within the root directory of this repository
+- Initialize Node.js by entering `npm start` into your command-line
+- Open your browser and navigate to the link provided in your command-line (http://localhost:3001)
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+### Screenshots
 
-## Getting Started
+![Index](./assets/images/index-screenshot.png)
 
-The application should have a `db.json` file on the back end, which will be used to store and retrieve notes using the `fs` module.
+![Note Page](./assets/images/notes-screenshot.png)
 
-The following HTML routes should be created:
+## License
+This application is licensed under the MIT license. Please click on the link below to learn more.
 
-* `GET /notes` should return the `notes.html` file.
+https://opensource.org/licenses/MIT
 
-* `GET *` should return the `index.html` file.
+## Contributing
 
-The following API routes should be created:
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
+## Questions
 
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into `npm` packages that could do this for you).
+Please direct any questions about this project to olivelliott48@gmail.com. If you would like to see more projects, visit the GitHub link below.
 
-## Bonus
+https://www.github.com/olivelliott
 
-You haven’t learned how to handle DELETE requests, but this application has that functionality in the front end. As a bonus, see if you can add the DELETE route to the application using the following guideline:
 
-* `DELETE /api/notes/:id` should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+## Credits
 
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-
+Starter Code: https://github.com/coding-boot-camp/miniature-eureka

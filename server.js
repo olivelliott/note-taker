@@ -34,7 +34,6 @@ app.use((req, re) => {
   res.status(404).end();
 });
 
-
 app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}!`);
+  console.log(`App listening at http://localhost:${PORT} 🚀`);
 });
