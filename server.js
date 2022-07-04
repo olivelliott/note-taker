@@ -4,8 +4,6 @@ const nodemon = require("nodemon");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-app.set("port", PORT);
-
 const apiRoutes = require("./routes/apiRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
 
