@@ -27,10 +27,11 @@ Please fork this repository over to your local system.
 
 Once you have forked this repository, please initialize the npm modules into the repository through the command `npm install`. The package.json file holds the necessary dependencies for Node.js and Express.js.
 
-The server.js file contains the PORT, middleware, and imports for the required routes. The HTML and API routes are located in the `routes` directory. The helper folder contains the function to create unique id's for each saved note.
+The `server.js` file contains the PORT, middleware, and imports for the required routes. The HTML and API routes are located in the `routes` directory. The `helper` directory contains the function to create unique id's for each saved note.
 
 ## Usage
 
+- Complete the installation steps outlined above
 - The server.js file contains the methods to initialize database
 - Initialize your command-line within the root directory of this repository
 - Initialize Node.js by entering `npm start` into your command-line
