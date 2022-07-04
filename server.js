@@ -1,5 +1,4 @@
 const express = require("express");
-const nodemon = require("nodemon");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
